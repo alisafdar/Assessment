@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_8dp"
+    android:layout_marginBottom="@dimen/margin_8dp">
+
+    <View
+        android:id="@+id/avatarView"
+        android:layout_width="@dimen/main_avatar_size"
+        android:layout_height="@dimen/main_avatar_size"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:background="@drawable/main_circle_view" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:layout_toStartOf="@+id/chevronRightImageView"
+        android:layout_toEndOf="@+id/avatarView"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="Neil Armstrong’s Death, and a Stormy, Secret $6 Million Settlement" />
+
+    <TextView
+        android:id="@+id/byLineTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignStart="@+id/titleTextView"
+        android:layout_alignEnd="@+id/titleTextView"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"
+        android:textColor="@android:color/darker_gray"
+        tools:text="By SCOTT SHANE and SARAH KLIFF" />
+
+    <TextView
+        android:id="@+id/sourceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/byLineTextView"
+        android:layout_alignStart="@+id/titleTextView"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:textAllCaps="true"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"
+        android:textColor="@android:color/darker_gray"
+        tools:text="The New York Times" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/byLineTextView"
+        android:layout_alignTop="@+id/sourceTextView"
+        android:layout_alignEnd="@+id/titleTextView"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="@dimen/padding_4dp"
+        android:gravity="center_vertical"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"
+        android:textColor="@android:color/darker_gray"
+        tools:text="2019-07-23" />
+
+    <ImageView
+        android:id="@+id/chevronRightImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:src="@drawable/ic_chevron_right" />
+
+</RelativeLayout>

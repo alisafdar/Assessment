@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#47E4C2</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#a7a7a7</color>
+    <color name="light_gray">#CACACA</color>
+
+    <color name="toolbar_background">#47E4C2</color>
+
+    <!-- Main Row Item -->
+    <color name="main_circle">#9A9A9A</color>
+    <color name="title_text_color">#262626</color>
+    <color name="sub_detail_text_color">#626262</color>
+</resources>

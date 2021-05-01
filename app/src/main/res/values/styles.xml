@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+        <!--<item name="android:textColorPrimary">@color/white</item>-->
+        <!--<item name="actionBarStyle">@style/MyToolBarStyle</item>-->
+        <!--<item name="toolbarStyle">@style/Theme.GuidelinesCompat.Toolbar</item>-->
+
+    </style>
+
+
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/toolbar_background</item>
+        <item name="elevation">6dp</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="MyToolBarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/toolbar_background</item>
+        <!--<item name="android:actionButtonStyle">@style/myActionButtonStyle</item>-->
+        <item name="titleTextAppearance">@style/MyTitleTextAppearance</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">40dp</item>
+        <item name="android:width">40dp</item>
+    </style>
+
+    <style name="MyTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--<item name="android:textSize">18sp</item>-->
+        <!--<item name="android:textColor">@color/white</item>-->
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="ActionbarTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:actionModeBackground">@color/toolbar_background</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
